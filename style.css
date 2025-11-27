@@ -1,1 +1,82 @@
 
+/* Skip link */
+.skip {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.skip:focus {
+  top: 10px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 20px;
+  background: #ff9052;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #ff6b1a;
+  transform: scale(1.05);
+}
+
+/* Image styling - Box model */
+img {
+  border: 3px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Grid gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+/* nth-child selector */
+.gallery img:nth-child(even) {
+  border-radius: 30px;
+  border-color: #ffa35c;
+}
+
+/* Flex section */
+.flex-section {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+/* Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff7f0;
+}
+
+main {
+  padding: 20px;
+}
